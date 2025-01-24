@@ -25,3 +25,6 @@ A chatbot application aimed at providing mental health support by offering motiv
 ### Next Steps
 - Set up the development environment.
 - Build the project skeleton.
+
+
+### Day 2 Progress
