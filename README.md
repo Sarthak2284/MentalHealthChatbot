@@ -20,24 +20,26 @@ A chatbot application aimed at providing mental health support by offering motiv
 
 ### Folder Structure
 
-MentalHealthChatbot/
-├── .vscode/ # VS Code settings folder (optional)
-│ └── settings.json # VS Code settings (optional)
-├── src/ # Source folder for Java files
-│ ├── ChatbotLogic.java # Class handling chatbot responses and logic
-│ ├── Main.java # Entry point to run the chatbot
-│ ├── NLPProcessor.java # Class for processing NLP-related tasks
-│ └── TestOpenNLP.java # Test file for OpenNLP integration
-├── db/ # Folder for the database files
-│ └── chatbot.db # Database file storing chatbot data
-├── resources/ # Folder for storing resources like models, config files, etc.
-├── libs/ # Folder for external libraries (JAR files)
-│ ├── opennlp-tools-2.5.3.jar # OpenNLP JAR for NLP tasks
-│ ├── slf4j-api-2.0.0-alpha1.jar # SLF4J API JAR for logging
-│ └── slf4j-simple-2.0.0-alpha1.jar # SLF4J Simple JAR for logging implementation
-├── README.md # Project documentation with setup instructions and details
-├── .classpath # Classpath configuration file for Java
-└── .gitignore # Git ignore file to exclude unnecessary files from being tracked by git
+```mermaid
+graph TD;
+  A[MentalHealthChatbot] --> B[.vscode];
+  A --> C[src];
+  A --> D[db];
+  A --> E[resources];
+  A --> F[libs];
+  A --> G[README.md];
+  A --> H[.classpath];
+
+  B --> B1[settings.json];
+  C --> C1[ChatbotLogic.java];
+  C --> C2[Main.java];
+  C --> C3[NLPProcessor.java];
+  C --> C4[TestOpenNLP.java];
+  D --> D1[chatbot.db];
+  F --> F1[opennlp-tools-2.5.3.jar];
+  F --> F2[slf4j-api-2.0.0-alpha1.jar];
+  F --> F3[slf4j-simple-2.0.0-alpha1.jar];
+```
 
 ### Next Steps
 
